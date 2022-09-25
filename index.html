@@ -1,41 +1,161 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/mystyle.css" />
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    
+</head>
+<body>
+     <div class="container-fluid">
+          <div class="row opacity-75 bg-danger"> <!--headings -->
+              <div class="col-12">
+                  <h1 class="text-light display-2">Fatbook</h1>
+                  <h3 class="display-6 text-light">The BIGGEST Social Media ever.</h3>
+              </div>
+          </div>  <!--headings -->
+          <div class="row" id="navigation">
+              <div class="col-12 bg-danger">
+                 <nav class="navbar container-fluid navbar-expand-lg">
+<!--  <div class="container-fluid">-->
+    <a class="navbar-brand" href="#">
+        <img src="https://img.freepik.com/free-vector/orange-rounded-logotype_1043-205.jpg?w=1380&t=st=1663924897~exp=1663925497~hmac=4c26197379c1c1ab3004e7aecf7a4e451ff34e0d7c25472f91bb2df3e5ee9c47" alt="" width="50px">
+        
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+<!--  </div>-->
+</nav>
+              </div>
+          </div>
+         <div class="row h-100">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                               <img src="https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.2.1128932483.1663838803" alt="" class="card-img-top">
+                                <h1 class="card-title">Reymar</h1>
+                                <p class="card-caption">16, POLANGUI</p>
+                            <p class="card-footer">
+                                <button class="btn btn-success">Buy</button>
+                                <i class="card-caption">$ 3000.00</i>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                               <img src="https://img.freepik.com/free-photo/attractive-mixed-race-male-with-positive-smile-shows-white-teeth-keeps-hands-stomach-being-high-spirit-wears-white-shirt-rejoices-positive-moments-life-people-emotions-concept_273609-15527.jpg?size=626&ext=jpg&ga=GA1.2.1128932483.1663838803" alt="" class="card-img-top">
+                                <h1 class="card-title">Piolo</h1>
+                                <p class="card-caption">45, POLANGUI</p>
+                            <p class="card-footer">
+                                <button class="btn btn-success">Buy</button>
+                                <i class="card-caption">$ 30.00</i>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                               <img src="https://img.freepik.com/free-photo/tender-feminine-woman-with-blue-eyes-smiles-pleasantly-has-toothy-smile-wears-white-comfortable-sweater-looks-directly-camera-isolated-pink-background_273609-32160.jpg?size=626&ext=jpg&ga=GA1.2.1128932483.1663838803" alt="" class="card-img-top">
+                                <h1 class="card-title">Tender</h1>
+                                <p class="card-caption">22, Manila</p>
+                            <p class="card-footer">
+                                <button class="btn btn-success">Buy</button>
+                                <i class="card-caption">$ 3000.00</i>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <!--profile pics-->
+            <div class="col-4 bg-danger opacity-75 text-white "> <!--LOGIN -->
+                <form>
+                <h3 class="display-3 mb-3">Login</h3>
+  <div class="row mb-3 mt-5">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          First radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Second radio
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+        <label class="form-check-label" for="gridRadios3">
+          Third disabled radio
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-light">Sign in</button>
+</form>
+                
+            </div> <!--LOGIN -->
+         </div>
          
-    </head>
-    <body>
-        <header>    
-            <h1 id="headline"> CRUD </h1>
-            <h3> We keep your records safe. Maybe. </h3>
-        </header>
-        
-       <nav>
-          <ul class="navigation">
-              <li><a href="index.html"> Home </a></li>
-               <li><a href="about.html"> About </a></li>
-               <li><a href="services.html"> Services </a></li>
-               <li><a href="records.html"> Records </a></li>
-               <li><a href="login.html"> Login </a></li>
-           </ul>
-        </nav>
-        
-        <maincontainer>
-             <h1>Welcome to my page. please get out.</h1>
-            
-            <ul>
-                <li>This is just for list 1.</li>
-                <li>This is just for list 1.</li>
-                <li>This is just for list 1.</li>
-            </ul>
-        </maincontainer>
-        
-        
-        <footer>
-            <center>
-            <p>All rights reserved &copy; 2022</p>
-            </center>
-        </footer>
-        
-    </body>
+         
+         <div class="row">
+             div.container.container-sm.container-md.container-lg
+             
+         </div>
+     </div>
+</body>
+<script src="js/bootstrap.js"></script>
 </html>
